@@ -1,0 +1,165 @@
+=== Singleton Pattern ===
+=== Singleton Pattern Example ===
+
+Logger instance created.
+[LOG] This is the first log message.
+[LOG] This is the second log message.
+
+logger1 hashCode: 21685669
+logger2 hashCode: 21685669
+Are both instances the same? true
+
+=== Factory Method Pattern ===
+=== Factory Method Pattern Example ===
+
+Opening Word Document...
+Saving Word Document...
+Closing Word Document...
+
+Opening PDF Document...
+Saving PDF Document...
+Closing PDF Document...
+
+Opening Excel Document...
+Saving Excel Document...
+Closing Excel Document...
+
+=== Builder Pattern ===
+=== Builder Pattern Example ===
+
+--- Office PC ---
+Computer Configuration:
+  CPU: Intel i5
+  RAM: 8GB
+  Storage: 512GB SSD
+  GPU: Integrated
+  OS: Windows 11
+  Bluetooth: Disabled
+  WiFi: Enabled
+
+--- Gaming PC ---
+Computer Configuration:
+  CPU: Intel i9
+  RAM: 32GB
+  Storage: 2TB NVMe SSD
+  GPU: NVIDIA RTX 4090
+  OS: Windows 11 Pro
+  Bluetooth: Enabled
+  WiFi: Enabled
+
+--- Server ---
+Computer Configuration:
+  CPU: AMD EPYC
+  RAM: 128GB
+  Storage: 4TB NVMe RAID
+  GPU: Integrated
+  OS: Ubuntu Server 22.04
+  Bluetooth: Disabled
+  WiFi: Disabled
+
+=== Adapter Pattern ===
+=== Adapter Pattern Example ===
+
+Processing payment of $100.0 through PayPal.
+Processing payment of $250.5 through Stripe.
+Processing payment of $75.25 through Square.
+
+All payment gateways processed through a unified interface!
+
+=== Decorator Pattern ===
+=== Decorator Pattern Example ===
+
+--- Email Only ---
+[Email] Sending: Hello, this is an email notification!
+
+--- Email + SMS ---
+[Email] Sending: Hello, this is a multi-channel notification!
+[SMS] Sending: Hello, this is a multi-channel notification!
+
+--- Email + SMS + Slack ---
+[Email] Sending: Hello, this goes to all channels!
+[SMS] Sending: Hello, this goes to all channels!
+[Slack] Sending: Hello, this goes to all channels!
+
+=== Proxy Pattern ===
+=== Proxy Pattern Example ===
+
+Images created but not yet loaded.
+
+--- First access to image1 ---
+ProxyImage: First access - loading image...
+Loading image from remote server: photo1.jpg
+Image loaded successfully: photo1.jpg
+Displaying image: photo1.jpg
+
+--- Second access to image1 (cached) ---
+ProxyImage: Using cached image...
+Displaying image: photo1.jpg
+
+--- First access to image2 ---
+ProxyImage: First access - loading image...
+Loading image from remote server: photo2.jpg
+Image loaded successfully: photo2.jpg
+Displaying image: photo2.jpg
+
+=== Observer Pattern ===
+=== Observer Pattern Example ===
+
+Observer registered for GOOGL
+Observer registered for GOOGL
+Observer registered for GOOGL
+
+GOOGL price changed: $2800.0 -> $2850.5
+[StockTracker - Mobile] GOOGL is now $2850.5
+[StockDashboard - Web] GOOGL is now $2850.5
+[InvestorApp - Mobile] GOOGL is now $2850.5
+
+GOOGL price changed: $2850.5 -> $2900.75
+[StockTracker - Mobile] GOOGL is now $2900.75
+[StockDashboard - Web] GOOGL is now $2900.75
+[InvestorApp - Mobile] GOOGL is now $2900.75
+Observer deregistered from GOOGL
+
+GOOGL price changed: $2900.75 -> $2875.0
+[StockTracker - Mobile] GOOGL is now $2875.0
+[StockDashboard - Web] GOOGL is now $2875.0
+
+=== Strategy Pattern ===
+=== Strategy Pattern Example ===
+
+Paid $150.0 using Credit Card ending in 1234
+Paid $89.99 using PayPal account: user@example.com
+Paid $500.0 using Bitcoin wallet: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
+
+=== Command Pattern ===
+=== Command Pattern Example ===
+
+Remote button pressed -> Light is ON
+Remote button pressed -> Light is OFF
+
+=== MVC Pattern ===
+=== MVC Pattern Example ===
+
+Initial Student Details:
+=== Student Details ===
+Name:  Ishan Parmar
+ID:    S001
+Grade: A
+=======================
+
+Updating student details...
+
+Updated Student Details:
+=== Student Details ===
+Name:  Ishan P.
+ID:    S001
+Grade: A+
+=======================
+
+=== Dependency Injection ===
+=== Dependency Injection Example ===
+
+Customer found: John Doe (ID: 1)
+Customer found: Jane Smith (ID: 2)
+Customer found: Ishan Parmar (ID: 3)
+Customer with ID 4 not found.
